@@ -27,6 +27,7 @@ $ sudo npm install npx --save
 $ sudo npm install create-react-app --save
 $ git clone https://github.com/Chumiaczek/portfolio-website
 $ cd portfolio-website
+$ npm install
 $ npm start
 ```
 <h3>Used React Components</h3>
