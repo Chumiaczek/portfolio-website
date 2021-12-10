@@ -25,8 +25,8 @@
 $ sudo apt install npm git -y
 $ sudo npm install npx --save
 $ sudo npm install create-react-app --save
-$ git clone https://github.com/vladocar/boilerplate-readme-template/blob/master
-$ cd personal-portfolio
+$ git clone https://github.com/Chumiaczek/portfolio-website
+$ cd portfolio-website
 $ npm start
 ```
 <h3>Used React Components</h3>
