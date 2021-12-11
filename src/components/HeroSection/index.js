@@ -34,7 +34,7 @@ const HeroSection = () => {
                 <HeroP data-aos="zoom-up" data-aos-delay="1600">
                     Na tej stronie znajdziesz wszystko o <Color>mnie</Color>!
                 </HeroP>
-                <HeroP2 data-aos="fade-up" data-aos-delay="2000">Zjedź niżej</HeroP2>
+                <HeroP2 data-aos="zoom-in" data-aos-delay="2000">Zjedź niżej</HeroP2>
                 <MouseIcon data-aos="fade-up" data-aos-delay="2600"></MouseIcon>
             </HeroContent>   
         </HeroContainer>
