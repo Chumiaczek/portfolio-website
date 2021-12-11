@@ -1,11 +1,8 @@
 import React, {useEffect} from 'react'
 import Aos from "aos"
-import Photo from "../../images/image1.jpg"
 import "aos/dist/aos.css"
 import {
     HeroContainer,
-    HeroBg,
-    VideoBg,
     HeroContent,
     HeroH1,
     HeroP,
@@ -13,6 +10,7 @@ import {
     HeroP2,
     MouseIcon,
     Color,
+    HeroWrapper,
 } from './HeroElements'
 
 const HeroSection = () => {
@@ -22,21 +20,20 @@ const HeroSection = () => {
         }, [])
 
         return(
-        <HeroContainer id="home">
-            <HeroBg>
-                <VideoBg src={Photo}/>
-            </HeroBg>
-            <HeroContent>
-                <HeroP1 data-aos="fade-down">
-                    Cześć, nazywam się:
-                </HeroP1>
-                <HeroH1 data-aos="zoom-in-up" data-aos-delay="1000">Grzegorz <Color>(Chumi)</Color> Tabat</HeroH1>
-                <HeroP data-aos="zoom-up" data-aos-delay="1600">
-                    Na tej stronie znajdziesz wszystko o <Color>mnie</Color>!
-                </HeroP>
-                <HeroP2 data-aos="zoom-in" data-aos-delay="2000">Zjedź niżej</HeroP2>
-                <MouseIcon data-aos="fade-up" data-aos-delay="2600"></MouseIcon>
-            </HeroContent>   
+        <HeroContainer className="HeroPhoto" id="home">
+            <HeroWrapper className="HeroOverlay">
+                <HeroContent>
+                    <HeroP1 data-aos="fade-down">
+                        Cześć, nazywam się:
+                    </HeroP1>
+                    <HeroH1 data-aos="zoom-in-up" data-aos-delay="1000">Grzegorz <Color>(Chumi)</Color> Tabat</HeroH1>
+                    <HeroP data-aos="zoom-up" data-aos-delay="1600">
+                        Na tej stronie znajdziesz wszystko o <Color>mnie</Color>!
+                    </HeroP>
+                    <HeroP2 data-aos="zoom-in" data-aos-delay="2000">Zjedź niżej</HeroP2>
+                    <MouseIcon data-aos="fade-up" data-aos-delay="2600"></MouseIcon>
+                </HeroContent>
+            </HeroWrapper>   
         </HeroContainer>
         )
     }

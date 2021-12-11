@@ -3,12 +3,6 @@ import {BsMouse} from 'react-icons/bs'
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
-    display: flex;
-    justify-content: center;
-    padding: 0 30px;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
 
     /* Add :before style */
 `
@@ -105,4 +99,15 @@ export const MouseIcon = styled(BsMouse)`
     color: #fc8c03;
     font-size: 40px;
     animation: pulse 2s infinite;
+`
+
+export const HeroWrapper = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
 `

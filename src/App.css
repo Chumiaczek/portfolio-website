@@ -30,6 +30,19 @@ html{
   transition: 0.2s ease-in-out;
 }
 
+.HeroPhoto{
+  background-image: url("/src/images/image1.jpg") !important;
+  min-height: 100vh;;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+}
+
+.HeroOverlay{
+  background: rgba(20, 18, 19, 0.9);
+}
+
 .preloader{
   display: flex;
   align-items: center;
