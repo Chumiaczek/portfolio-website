@@ -1,27 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Home from '../../pages'
-import Lottie from 'react-lottie';
-import * as location from '../../images/worldlocations.json'
-import * as success from '../../images/success.json'
+import LinearProgress from '@mui/material/LinearProgress';
+import { LoadingBar, Logo, BarWithProgress, Value } from './PreLoaderElements'
 
-const defaultOptions1 = {
-    loop: true,
-    autoplay: true,
-    animationData: location.default,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  
-  const defaultOptions2 = {
-    loop: true,
-    autoplay: true,
-    animationData: success.default,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
+let progress = 0
 function PreLoader() {
 
     const [data, setData] = useState([]);
@@ -43,14 +25,35 @@ function PreLoader() {
         }, 2000)
 }, [])
 
+const [value,setValue] = useState();
+
+  const refresh = ()=>{
+      // it re-renders the component
+     setValue({});
+  }
+
+function SetProgress() {
+    setTimeout(() => {
+        if( progress < 100){
+            progress = Number(progress) + 10
+            console.log(progress)
+            refresh()
+        }
+    }, 400)
+
+}
+SetProgress()
     return (
         <>
             {
                 !completed ? (<div className='preloader'>
-                    {!loading ? (
-                      <Lottie options={defaultOptions1} height={200} width={200} />
+                    {!loading ? (<LoadingBar><Logo>Chumi</Logo>
+                      <BarWithProgress><LinearProgress variant="determinate" value={progress}></LinearProgress><Value>{progress}</Value></BarWithProgress></LoadingBar>
                     ) : (
-                      <Lottie options={defaultOptions2} height={100} width={100} />
+                        <>
+                        <LoadingBar><Logo>Chumi</Logo>
+                        <BarWithProgress><LinearProgress></LinearProgress><Value>{progress}</Value></BarWithProgress></LoadingBar>
+                        </>
                     )}
                   </div>)  
                 : (<Home />)
@@ -58,6 +61,14 @@ function PreLoader() {
             }
         </>
     )
+    function setProgress() {
+        setTimeout(() => {
+            if( progress < 90){
+                progress = Number(progress) + 10
+                console.log(progress)
+            }
+        }, 200)
+    }
 }
 
 export default PreLoader
