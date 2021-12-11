@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
+import {BsMouse} from 'react-icons/bs'
 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0 30px;
     height: 100vh;
     position: relative;
@@ -48,6 +47,9 @@ export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 48px;
     text-align: center;
+    margin-top: 10vh;
+
+    animation: grow-and-shrink 2s infinite;
 
     @media screen and (max-width: 768px){
         font-size: 40px;
@@ -58,8 +60,12 @@ export const HeroH1 = styled.h1`
     }
 `
 
+export const Color = styled.span`
+    color: #fc8c03;
+`
+
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin-top: 10vh;
     color: #fff;
     font-size: 24px;
     text-align: center;
@@ -74,19 +80,25 @@ export const HeroP = styled.p`
     }
 `
 
-export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export const HeroP1 = styled.p`
+    margin-top: 20vh;
+    color: #fff;
+    font-size: 30px;
 `
 
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px;
+export const HeroP2 = styled.p`
+    font-size: 25px;
+    color: #fff;
+    margin-top: 30vh;
+
+    @media screen and (max-width: 768px){
+        margin-top: 20vh;
+    }
 `
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
+export const MouseIcon = styled(BsMouse)`
+    margin-top: 2vh;    
+    color: #fc8c03;
+    font-size: 40px;
+    animation: pulse 2s infinite;
 `

@@ -35,13 +35,13 @@ const Navbar = ({toggle}) => {
 
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="uslugi">Usługi</NavLinks>
+                            <NavLinks to="strona-glowna">Strona Główna</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="omnie">O Mnie</NavLinks>
+                            <NavLinks to="o-mnie">O mnie</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="cennik">Cennik</NavLinks>
+                            <NavLinks to="projekty">Projekty</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="kontakt">Kontakt</NavLinks>

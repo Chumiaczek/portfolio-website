@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import { Button } from '../ButtonElement'
 import Aos from "aos"
 import "aos/dist/aos.css"
-
 import{
     InfoContainer,
     InfoWrapper,
@@ -29,7 +28,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
-                        <Column1 data-aos="fade-right">
+                        <Column1 data-aos="zoom-out">
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
@@ -48,7 +47,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img} alt={alt} data-aos="fade-left"/>
+                                <Img src={img} alt={alt} data-aos="zoom-in"/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
