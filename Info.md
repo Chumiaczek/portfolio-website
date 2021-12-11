@@ -3,7 +3,6 @@
 2. Ideas:
     - Entry page
     - About me page
-    - Hobby page
     - Projects page
     - Contact me page
 
