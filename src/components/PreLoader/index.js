@@ -39,7 +39,7 @@ function SetProgress() {
             console.log(progress)
             refresh()
         }
-    }, 400)
+    }, 200)
 
 }
 SetProgress()
