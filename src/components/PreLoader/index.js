@@ -20,7 +20,7 @@ function PreLoader() {
 
                 setTimeout(() => {
                     setcompleted(true)
-                }, 20000)
+                }, 1000)
         })
         }, 2000)
 }, [])
