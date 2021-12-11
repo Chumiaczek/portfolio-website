@@ -94,6 +94,10 @@ export const HeroP2 = styled.p`
     @media screen and (max-width: 768px){
         margin-top: 10vh;
     }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }
 `
 
 export const MouseIcon = styled(BsMouse)`
