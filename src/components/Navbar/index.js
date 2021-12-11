@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import {
     Nav,
@@ -13,9 +13,19 @@ import {
 } from './NavbarElements'
 
 const Navbar = ({toggle}) => {
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+        if(window.scrollY >= 40){
+            setColorchange(true);
+        }
+        else{
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
         <>
-            <Nav>
+            <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <NavbarContainer>
                     <NavLogo to="/">
                         Chumi

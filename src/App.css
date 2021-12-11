@@ -10,3 +10,14 @@ html{
   width: 100%;
   background: #010606;
 }
+
+
+.navbar{
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar.colorChange{
+  background-color: #0c0c0c;
+  transition: 0.2s ease-in-out;
+}

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Button } from '../ButtonElement'
 import Aos from "aos"
-import Video from "../../videos/video.mp4"
+import Photo from "../../images/image1.jpg"
 import "aos/dist/aos.css"
 import {
     HeroContainer,
@@ -29,7 +29,7 @@ const HeroSection = () => {
         return(
         <HeroContainer id="home">
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                <VideoBg src={Photo}/>
             </HeroBg>
             <HeroContent data-aos="fade-up">
                 <HeroH1>Nowoczesne strony WWW</HeroH1>
