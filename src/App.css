@@ -12,6 +12,13 @@ html{
   background: #0c0c0c;
 }
 
+.openingdiv{
+  animation: load 1s ease-in-out;
+}
+
+.CloseBar{
+  animation: unload 1s ease-in-out;
+}
 
 .navbar{
   background-color: transparent;
@@ -78,6 +85,15 @@ html{
 
 .css-1dheygv{
   background-color: rgba(252, 140, 3, 1) !important;
+}
+
+@keyframes load{
+  0%{ opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes unload{
+  0%{ opacity: 1;}
+  100%{opacity: 0;}
 }
 
 @keyframes pulse{

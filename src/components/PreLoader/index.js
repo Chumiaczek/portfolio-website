@@ -51,7 +51,7 @@ SetProgress()
                       <BarWithProgress><LinearProgress variant="determinate" value={progress}></LinearProgress><Value>{progress}</Value></BarWithProgress></LoadingBar>
                     ) : (
                         <>
-                        <LoadingBar><Logo>Chumi</Logo>
+                        <LoadingBar className="CloseBar"><Logo>Chumi</Logo>
                         <BarWithProgress><LinearProgress></LinearProgress><Value>{progress}</Value></BarWithProgress></LoadingBar>
                         </>
                     )}
@@ -61,14 +61,6 @@ SetProgress()
             }
         </>
     )
-    function setProgress() {
-        setTimeout(() => {
-            if( progress < 90){
-                progress = Number(progress) + 10
-                console.log(progress)
-            }
-        }, 200)
-    }
 }
 
 export default PreLoader

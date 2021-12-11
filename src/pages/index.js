@@ -14,12 +14,12 @@ const Home = () => {
 
 
     return (
-        <>  
+        <div className="openingdiv">  
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection {...homeObjOne}/>
-        </>
+        </div>
     )
 }
 
