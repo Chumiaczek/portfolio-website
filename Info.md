@@ -35,5 +35,8 @@
     b) Hero section video:
     - Pexels (https://pexels.com)
 
+    c) Selected photos:
+    - 
+
 5. Visual Project:
     - Not yet completed, will be done before the project starts
