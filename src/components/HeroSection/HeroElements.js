@@ -92,7 +92,7 @@ export const HeroP2 = styled.p`
     margin-top: 30vh;
 
     @media screen and (max-width: 768px){
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
     @media screen and (max-width: 480px){
