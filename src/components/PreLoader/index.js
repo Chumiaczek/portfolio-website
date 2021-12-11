@@ -22,7 +22,7 @@ function PreLoader() {
                     setcompleted(true)
                 }, 1000)
         })
-        }, 2000)
+        }, 20000)
 }, [])
 
 const [value,setValue] = useState();
