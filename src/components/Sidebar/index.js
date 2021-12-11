@@ -5,8 +5,6 @@ import {
     CloseIcon,
     SidebarWrapper,
     SidebarLink,
-    SidebarRoute,
-    SideBtnWrap,
     SidebarMenu,
 } from './SidebarElements'
 
@@ -23,9 +21,6 @@ const Sidebar = ({toggle, isOpen}) => {
                     <SidebarLink to="cennik" onClick={toggle}>Cennik</SidebarLink>
                     <SidebarLink to="kontakt" onClick={toggle}>Kontakt</SidebarLink>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRoute to="/zakup">Zakup</SidebarRoute>
-                </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
     )
