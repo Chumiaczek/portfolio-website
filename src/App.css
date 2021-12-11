@@ -36,7 +36,7 @@ html{
   background-attachment: fixed !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-size: 100% !important;
+  background-size: cover !important;
 }
 
 .HeroOverlay{
