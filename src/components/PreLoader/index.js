@@ -3,6 +3,44 @@ import Home from '../../pages'
 import LinearProgress from '@mui/material/LinearProgress';
 import { LoadingBar, Logo, BarWithProgress, Value } from './PreLoaderElements'
 
+var styles = `
+.css-eglki6-MuiLinearProgress-root{
+    width: 50%;
+    height: 30px;
+    background-color: rgba(252, 140, 3, 0.3) !important;
+  }
+  
+  .css-5ir5xx-MuiLinearProgress-bar1{
+    background-color:rgba(252, 140, 3, 1) !important;
+  }
+  
+  .css-1r8wrcl-MuiLinearProgress-bar2{
+    background-color:rgba(252, 140, 3, 1) !important;
+  }
+  
+  .css-fl5ss-MuiLinearProgress-root{
+    background-color:rgba(252, 140, 3, 1) !important;
+    width: 50%;
+    height: 30px;
+  }
+  
+  .css-qhoknl-MuiLinearProgress-bar1{
+    background-color:rgba(252, 140, 3, 1) !important;
+  }
+  
+  .css-1qdnzt4-MuiLinearProgress-bar2{
+    background-color: rgba(252, 140, 3, 0.3) !important;
+  }
+  
+  .css-5xe99f-MuiLinearProgress-bar1{
+    background-color: rgba(252, 140, 3, 1) !important;
+  }
+`
+
+var styleSheet = document.createElement("style")
+styleSheet.innerText = styles
+document.head.appendChild(styleSheet)
+
 let progress = 0
 function PreLoader() {
 
