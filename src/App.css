@@ -31,7 +31,7 @@ html{
 }
 
 .HeroPhoto{
-  background-image: url("/src/images/image1.jpg") !important;
+  background-image: url("/src/images/image1.webp") !important;
   min-height: 100vh;;
   background-attachment: fixed !important;
   background-position: center !important;
